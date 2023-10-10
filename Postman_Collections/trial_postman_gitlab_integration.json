@@ -23,48 +23,7 @@
               "});\r",
               "\r",
               "/*---------------------------------------------*/\r",
-              "\r",
-              "pm.test(\"Successful POST request\", function () {\r",
-              "    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202]);\r",
-              "});\r",
-              "\r",
-              "pm.test(\"Response time is less than 10000ms\", function() {\r",
-              "    pm.expect(pm.response.responseTime).to.be.below(10000);\r",
-              "});\r",
-              "\r",
-              "pm.test(\"Global transmission ID matches\", function () {\r",
-              "    pm.expect(pm.response.json().id).to.include(pm.environment.get(\"globalTransmissionID\"));\r",
-              "});\r",
-              "\r",
-              "pm.test(\"Switch transaction ID matches\", function () {\r",
-              "    pm.expect(pm.response.json().id).to.include(pm.environment.get(\"switchTransactionID\"));\r",
-              "});\r",
-              "\r",
-              "pm.test(\"Response should be in json format\", function(){\r",
-              "    pm.response.to.be.json;\r",
-              "});\r",
-              "\r",
-              "pm.test(\"No error\", function () {\r",
-              "    pm.response.to.not.be.error;\r",
-              "});\r",
-              "\r",
-              "pm.test(\"No EXCEPTION_CAUSE error\", function () {\r",
-              "    pm.expect(pm.response.text()).to.not.include(\"EXCEPTION_CAUSE\");\r",
-              "});\r",
-              "\r",
-              "pm.test(\"Status is not bad request\", function () {\r",
-              "    pm.response.to.not.be.badRequest;\r",
-              "});\r",
-              "\r",
-              "\r",
-              "\r",
-              "var responseData = pm.response.json();\r",
-              "\r",
-              "var ID = responseData.id\r",
-              "pm.test(\"Generated ID: \" + ID, function () {});\r",
-              "\r",
-              "pm.environment.set(\"clmGlobalSwitchID\", responseData.id);\r",
-              "pm.environment.set(\"clmPayload\", responseData.payload);"
+              ""
             ],
             "type": "text/javascript"
           }
@@ -74,16 +33,7 @@
           "script": {
             "id": "9613561c-0b7a-44a5-818a-6764f3292f4a",
             "exec": [
-              "var moment = require('moment');\r",
-              "pm.environment.set('currDate', moment().format(\"YYYYMMDD\"));\r",
-              "\r",
-              "var firstRand = Math.floor(Math.random() * 1000);\r",
-              "\r",
-              "var secondRand = Math.floor(Math.random() * 100);\r",
-              "\r",
-              "pm.variables.set('globalTransmissionID', firstRand + '0' + secondRand);\r",
-              "\r",
-              "pm.variables.set('switchTransactionID', secondRand + '1' + firstRand);"
+              ""
             ],
             "type": "text/javascript"
           }
@@ -117,16 +67,7 @@
           "script": {
             "id": "2627137b-af8e-4628-b776-b005de147651",
             "exec": [
-              "var moment = require('moment');\r",
-              "pm.environment.set('currDate', moment().format(\"YYYYMMDD\"));\r",
-              "\r",
-              "var firstRand = Math.floor(Math.random() * 1000);\r",
-              "\r",
-              "var secondRand = Math.floor(Math.random() * 100);\r",
-              "\r",
-              "pm.variables.set('globalTransmissionID', firstRand + '0' + secondRand);\r",
-              "\r",
-              "pm.variables.set('switchTransactionID', secondRand + '1' + firstRand);"
+              ""
             ],
             "type": "text/javascript"
           }
@@ -264,48 +205,7 @@
               "});\r",
               "\r",
               "/*---------------------------------------------*/\r",
-              "\r",
-              "pm.test(\"Successful POST request\", function () {\r",
-              "    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202]);\r",
-              "});\r",
-              "\r",
-              "pm.test(\"Response time is less than 10000ms\", function() {\r",
-              "    pm.expect(pm.response.responseTime).to.be.below(10000);\r",
-              "});\r",
-              "\r",
-              "pm.test(\"Global transmission ID matches\", function () {\r",
-              "    pm.expect(pm.response.json().id).to.include(pm.environment.get(\"globalTransmissionID\"));\r",
-              "});\r",
-              "\r",
-              "pm.test(\"Switch transaction ID matches\", function () {\r",
-              "    pm.expect(pm.response.json().id).to.include(pm.environment.get(\"switchTransactionID\"));\r",
-              "});\r",
-              "\r",
-              "pm.test(\"Response should be in json format\", function(){\r",
-              "    pm.response.to.be.json;\r",
-              "});\r",
-              "\r",
-              "pm.test(\"No error\", function () {\r",
-              "    pm.response.to.not.be.error;\r",
-              "});\r",
-              "\r",
-              "pm.test(\"No EXCEPTION_CAUSE error\", function () {\r",
-              "    pm.expect(pm.response.text()).to.not.include(\"EXCEPTION_CAUSE\");\r",
-              "});\r",
-              "\r",
-              "pm.test(\"Status is not bad request\", function () {\r",
-              "    pm.response.to.not.be.badRequest;\r",
-              "});\r",
-              "\r",
-              "\r",
-              "\r",
-              "var responseData = pm.response.json();\r",
-              "\r",
-              "var ID = responseData.id\r",
-              "pm.test(\"Generated ID: \" + ID, function () {});\r",
-              "\r",
-              "pm.environment.set(\"clmGlobalSwitchID\", responseData.id);\r",
-              "pm.environment.set(\"clmPayload\", responseData.payload);"
+              ""
             ],
             "type": "text/javascript"
           }
@@ -315,16 +215,7 @@
           "script": {
             "id": "df48c976-bb0b-4ea1-b408-1c87975579f4",
             "exec": [
-              "var moment = require('moment');\r",
-              "pm.environment.set('currDate', moment().format(\"YYYYMMDD\"));\r",
-              "\r",
-              "var firstRand = Math.floor(Math.random() * 1000);\r",
-              "\r",
-              "var secondRand = Math.floor(Math.random() * 100);\r",
-              "\r",
-              "pm.variables.set('globalTransmissionID', firstRand + '0' + secondRand);\r",
-              "\r",
-              "pm.variables.set('switchTransactionID', secondRand + '1' + firstRand);"
+              ""
             ],
             "type": "text/javascript"
           }
@@ -339,7 +230,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"id\": \"{{IDKey}}{{currDate}}{{globalTransmissionID}}_{{IDKey}}{{currDate}}{{switchTransactionID}}\",\r\n    \"type\": \"GOODRX\",\r\n    \"isSynthetic\": {{isSynthetic}},\r\n    \"payload\": \"004766D0QASTR94        QASTR94        20220124HJG       \\u001e\\u001cAM01\\u001cC419500101\\u001cC51\\u001cCATEST\\u001cCBTEST\\u001cCMSOMEWHERE TEXAS\\u001cCNFORT F4TEST WORTH\\u001cCOTX\\u001cCP76116\\u001cCQ1111111111\\u001cC701\\u001c4X\\u001e\\u001cAM04\\u001cC244094326581\\u001cCCTEST\\u001cCDTEST\\u001cC1ELTESTTEST\\u001cC3\\u001cC61\\u001d\\u001e\\u001cAM07\\u001cEM1\\u001cNX2\\u001cD2000004471591\\u001cE103\\u001cD700006057761\\u001cE7001000\\u001cD30\\u001cD57\\u001cD61\\u001cD80\\u001cDE20120113\\u001cDF12\\u001cDJ1\\u001cC800\\u001c28ML\\u001cEU\\u001cEV\\u001cU701\\u001e\\u001cAM02\\u001cEY05\\u001cE91306935911\\u001e\\u001cAM03\\u001cEZ01\\u001cDB1851621064\\u001cDRKIM\\u001cPM7018573255\\u001c2JKWANGHEE\\u001c2K831 S BROADWAY #102\\u001c2MMINOT\\u001c2NND\\u001c2P58701\\u001e\\u001cAM11\\u001cD9369{\\u001cDC70{\\u001cDX{\\u001cDQ377I\\u001cDU439{\\u001cDN01\",\r\n    \"metadata\": [\r\n        {\r\n            \"name\": \"IS_REQUEST\",\r\n            \"value\": \"{{meta_value}}\"\r\n        }\r\n    ],\r\n    \"deadlineMilliseconds\": \"999999999999999\"\r\n}",
+          "raw": "{\r\n    \"id\": \"{{IDKey}}{{currDate}}{{globalTransmissionID}}_{{IDKey}}{{currDate}}{{switchTransactionID}}\",\r\n    \"type\": \"GOODRX\",\r\n    \"isSynthetic\": {{isSynthetic}},\r\n    \"payload\": \"004766D0QASTR94        QASTR94        20230124HJG       \\u001e\\u001cAM01\\u001cC419500101\\u001cC51\\u001cCATEST\\u001cCBTEST\\u001cCMSOMEWHERE TEXAS\\u001cCNFORT F4TEST WORTH\\u001cCOTX\\u001cCP76116\\u001cCQ1111111111\\u001cC701\\u001c4X\\u001e\\u001cAM04\\u001cC244094326581\\u001cCCTEST\\u001cCDTEST\\u001cC1ELTESTTEST\\u001cC3\\u001cC61\\u001d\\u001e\\u001cAM07\\u001cEM1\\u001cNX2\\u001cD2000004471591\\u001cE103\\u001cD700006057761\\u001cE7001000\\u001cD30\\u001cD57\\u001cD61\\u001cD80\\u001cDE20120113\\u001cDF12\\u001cDJ1\\u001cC800\\u001c28ML\\u001cEU\\u001cEV\\u001cU701\\u001e\\u001cAM02\\u001cEY05\\u001cE91306935911\\u001e\\u001cAM03\\u001cEZ01\\u001cDB1851621064\\u001cDRKIM\\u001cPM7018573255\\u001c2JKWANGHEE\\u001c2K831 S BROADWAY #102\\u001c2MMINOT\\u001c2NND\\u001c2P58701\\u001e\\u001cAM11\\u001cD9369{\\u001cDC70{\\u001cDX{\\u001cDQ377I\\u001cDU439{\\u001cDN01\",\r\n    \"metadata\": [\r\n        {\r\n            \"name\": \"IS_REQUEST\",\r\n            \"value\": \"{{meta_value}}\"\r\n        }\r\n    ],\r\n    \"deadlineMilliseconds\": \"999999999999999\"\r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -370,48 +261,7 @@
               "});\r",
               "\r",
               "/*---------------------------------------------*/\r",
-              "\r",
-              "pm.test(\"Successful POST request\", function () {\r",
-              "    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202]);\r",
-              "});\r",
-              "\r",
-              "pm.test(\"Response time is less than 10000ms\", function() {\r",
-              "    pm.expect(pm.response.responseTime).to.be.below(10000);\r",
-              "});\r",
-              "\r",
-              "pm.test(\"Global transmission ID matches\", function () {\r",
-              "    pm.expect(pm.response.json().id).to.include(pm.environment.get(\"globalTransmissionID\"));\r",
-              "});\r",
-              "\r",
-              "pm.test(\"Switch transaction ID matches\", function () {\r",
-              "    pm.expect(pm.response.json().id).to.include(pm.environment.get(\"switchTransactionID\"));\r",
-              "});\r",
-              "\r",
-              "pm.test(\"Response should be in json format\", function(){\r",
-              "    pm.response.to.be.json;\r",
-              "});\r",
-              "\r",
-              "pm.test(\"No error\", function () {\r",
-              "    pm.response.to.not.be.error;\r",
-              "});\r",
-              "\r",
-              "pm.test(\"No EXCEPTION_CAUSE error\", function () {\r",
-              "    pm.expect(pm.response.text()).to.not.include(\"EXCEPTION_CAUSE\");\r",
-              "});\r",
-              "\r",
-              "pm.test(\"Status is not bad request\", function () {\r",
-              "    pm.response.to.not.be.badRequest;\r",
-              "});\r",
-              "\r",
-              "\r",
-              "\r",
-              "var responseData = pm.response.json();\r",
-              "\r",
-              "var ID = responseData.id\r",
-              "pm.test(\"Generated ID: \" + ID, function () {});\r",
-              "\r",
-              "pm.environment.set(\"clmGlobalSwitchID\", responseData.id);\r",
-              "pm.environment.set(\"clmPayload\", responseData.payload);"
+              ""
             ],
             "type": "text/javascript"
           }
@@ -421,16 +271,7 @@
           "script": {
             "id": "67925f75-ef6e-4f57-a971-c88f2594902d",
             "exec": [
-              "var moment = require('moment');\r",
-              "pm.environment.set('currDate', moment().format(\"YYYYMMDD\"));\r",
-              "\r",
-              "var firstRand = Math.floor(Math.random() * 1000);\r",
-              "\r",
-              "var secondRand = Math.floor(Math.random() * 100);\r",
-              "\r",
-              "pm.variables.set('globalTransmissionID', firstRand + '0' + secondRand);\r",
-              "\r",
-              "pm.variables.set('switchTransactionID', secondRand + '1' + firstRand);"
+              ""
             ],
             "type": "text/javascript"
           }
@@ -445,7 +286,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"id\": \"{{IDKey}}{{currDate}}{{globalTransmissionID}}_{{IDKey}}{{currDate}}{{switchTransactionID}}\",\r\n    \"type\": \"GOODRX\",\r\n    \"isSynthetic\": {{isSynthetic}},\r\n    \"payload\": \"004766D0QASTR95     101QASTR95        20220504HJG       \\u001e\\u001cAM01\\u001cC419500101\\u001cC51\\u001cCATEST\\u001cCBTEST\\u001cCMSOMEWHERE TEXAS\\u001cCNFORT F4TEST WORTH\\u001cCOTX\\u001cCP76116\\u001cCQ1111111111\\u001cC701\\u001c4X\\u001e\\u001cAM04\\u001cC244094326581\\u001cCCTEST\\u001cCDTEST\\u001cC1ELTESTTEST\\u001cC3\\u001cC61\\u001d\\u001e\\u001cAM07\\u001cEM1\\u001cNX2\\u001cD2000004471591\\u001cE103\\u001cD700006057761\\u001cE7001000\\u001cD30\\u001cD57\\u001cD61\\u001cD80\\u001cDE20120113\\u001cDF12\\u001cDJ1\\u001cC800\\u001c28ML\\u001cEU\\u001cEV\\u001cU701\\u001e\\u001cAM02\\u001cEY05\\u001cE91306935911\\u001e\\u001cAM03\\u001cEZ01\\u001cDB1851621064\\u001cDRKIM\\u001cPM7018573255\\u001c2JKWANGHEE\\u001c2K831 S BROADWAY #102\\u001c2MMINOT\\u001c2NND\\u001c2P58701\\u001e\\u001cAM11\\u001cD9369{\\u001cDC70{\\u001cDX{\\u001cDQ377I\\u001cDU439{\\u001cDN01\",\r\n    \"metadata\": [\r\n        {\r\n            \"name\": \"IS_REQUEST\",\r\n            \"value\": \"{{meta_value}}\"\r\n        }\r\n    ],\r\n    \"deadlineMilliseconds\": \"999999999999999\"\r\n}",
+          "raw": "{\r\n    \"id\": \"{{IDKey}}{{currDate}}{{globalTransmissionID}}_{{IDKey}}{{currDate}}{{switchTransactionID}}\",\r\n    \"type\": \"GOODRX\",\r\n    \"isSynthetic\": {{isSynthetic}},\r\n    \"payload\": \"004766D0QASTR95     101QASTR95        20230504HJG       \\u001e\\u001cAM01\\u001cC419500101\\u001cC51\\u001cCATEST\\u001cCBTEST\\u001cCMSOMEWHERE TEXAS\\u001cCNFORT F4TEST WORTH\\u001cCOTX\\u001cCP76116\\u001cCQ1111111111\\u001cC701\\u001c4X\\u001e\\u001cAM04\\u001cC244094326581\\u001cCCTEST\\u001cCDTEST\\u001cC1ELTESTTEST\\u001cC3\\u001cC61\\u001d\\u001e\\u001cAM07\\u001cEM1\\u001cNX2\\u001cD2000004471591\\u001cE103\\u001cD700006057761\\u001cE7001000\\u001cD30\\u001cD57\\u001cD61\\u001cD80\\u001cDE20120113\\u001cDF12\\u001cDJ1\\u001cC800\\u001c28ML\\u001cEU\\u001cEV\\u001cU701\\u001e\\u001cAM02\\u001cEY05\\u001cE91306935911\\u001e\\u001cAM03\\u001cEZ01\\u001cDB1851621064\\u001cDRKIM\\u001cPM7018573255\\u001c2JKWANGHEE\\u001c2K831 S BROADWAY #102\\u001c2MMINOT\\u001c2NND\\u001c2P58701\\u001e\\u001cAM11\\u001cD9369{\\u001cDC70{\\u001cDX{\\u001cDQ377I\\u001cDU439{\\u001cDN01\",\r\n    \"metadata\": [\r\n        {\r\n            \"name\": \"IS_REQUEST\",\r\n            \"value\": \"{{meta_value}}\"\r\n        }\r\n    ],\r\n    \"deadlineMilliseconds\": \"999999999999999\"\r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -461,7 +302,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "03b8c7af-233f-4400-8ea6-203dc1fd3951",
+        "id": "ae7ea170-20d6-45d6-bb58-b966860e50e9",
         "type": "text/javascript",
         "exec": [
           "var moment = require('moment');",
@@ -480,10 +321,50 @@
     {
       "listen": "test",
       "script": {
-        "id": "ca604c3c-b54b-42fe-a3f7-aa6bce14d32e",
+        "id": "916cd257-231e-493e-bfca-c8b4e591b330",
         "type": "text/javascript",
         "exec": [
-          ""
+          "pm.test(\"Successful POST request\", function () {",
+          "    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202]);",
+          "});",
+          "",
+          "pm.test(\"Response time is less than 10000ms\", function() {",
+          "    pm.expect(pm.response.responseTime).to.be.below(10000);",
+          "});",
+          "",
+          "pm.test(\"Global transmission ID matches\", function () {",
+          "    pm.expect(pm.response.json().id).to.include(pm.environment.get(\"globalTransmissionID\"));",
+          "});",
+          "",
+          "pm.test(\"Switch transaction ID matches\", function () {",
+          "    pm.expect(pm.response.json().id).to.include(pm.environment.get(\"switchTransactionID\"));",
+          "});",
+          "",
+          "pm.test(\"Response should be in json format\", function(){",
+          "    pm.response.to.be.json;",
+          "});",
+          "",
+          "pm.test(\"No error\", function () {",
+          "    pm.response.to.not.be.error;",
+          "});",
+          "",
+          "pm.test(\"No EXCEPTION_CAUSE error\", function () {",
+          "    pm.expect(pm.response.text()).to.not.include(\"EXCEPTION_CAUSE\");",
+          "});",
+          "",
+          "pm.test(\"Status is not bad request\", function () {",
+          "    pm.response.to.not.be.badRequest;",
+          "});",
+          "",
+          "",
+          "",
+          "var responseData = pm.response.json();",
+          "",
+          "var ID = responseData.id",
+          "pm.test(\"Generated ID: \" + ID, function () {});",
+          "",
+          "pm.environment.set(\"clmGlobalSwitchID\", responseData.id);",
+          "pm.environment.set(\"clmPayload\", responseData.payload);"
         ]
       }
     }
