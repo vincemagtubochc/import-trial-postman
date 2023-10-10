@@ -55,7 +55,7 @@
             }
           }
         },
-        "url": "https://qa.pharmacyconnect.rxns.healthcareit.net:9011/api/pharmacy-connect/messaging/message-gateway/send-message"
+        "url": "{{URL}}"
       },
       "response": []
     }
